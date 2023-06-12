@@ -1,0 +1,974 @@
+/*
+Theme Name: Houzez Child
+Theme URI: http://houzez.co/
+Template: houzez
+Author: Favethemes
+Author URI: http://www.favethemes.com/
+Description: Houzez is a premium WordPress theme for real estate agents where modern aesthetics are combined with tasteful simplicity, and where the ease of use is achieved without compromise in your ability to customise the design. Whether you are a real estate agent looking to build a website for your company or a web developer seeking a perfect WordPress theme for your next project, you are certain to appreciate the numerous features and benefits that our theme provides.
+Tags: right-sidebar,left-sidebar,custom-colors,custom-menu,featured-images,post-formats,theme-options,translation-ready
+Version: 2.7.1.1685712010
+Updated: 2023-06-02 13:20:10
+
+*/
+@font-face {
+  font-family: 'Poppins';
+  src: url("./font/Poppins.ttf");
+}
+
+body{
+  font-family: 'Poppins';
+}
+.contact-right{
+  width: 40%;
+	background: #EDEDED;
+	padding: 20px;
+}
+.service_logo{
+	display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: auto;
+    border-radius: 50%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+.service_logo>img{
+	width: 50px;
+    height: 50px;
+    margin-bottom: 0px;
+}
+.nearby-right iframe{
+	width: 100%;
+	height: 100%;
+}
+.banner {
+  width: 90%;
+  margin: auto;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.banner_row .col-6 {
+  max-width: 100%;
+  width: 100%;
+  padding: 0px;
+	text-align: center;
+}
+/* .floor-types>div{
+	display: flex !important;
+	flex-direction: row;
+} */
+
+.floor-types .my-pp-flx{
+display: flex !important;
+  justify-content: center;
+}
+.main-flx{
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 80px;
+  margin-top: 35px;
+}
+.floor-map {
+    width: 100%;
+}
+.floor-map img{
+width: 70%;
+
+}
+.banner_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-col-6{
+  width: 100%;
+  padding: 0px 30px;
+}
+section.banner img, section.about img, section.floor-plan img, section.nearby img {
+  width: 80%;
+}
+.banner_row h3{
+font-family: 'Poppins', sans-seri ;
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 54px;
+color: #C00000;
+}
+.banner_row p{
+font-family: 'Poppins', sans-seri;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.05em;
+
+color: #000000;
+}
+.banner_row .banner-buttons{
+display: flex;
+}
+.banner-button-left {
+  margin-right: 15px;
+}
+.banner-button-right {
+  margin-left: 15px;
+}
+.banner_row .banner-button-left button{
+padding: 15px 30px;
+border: 2px solid #C00000;
+color: #000000;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+}
+.banner_row .banner-button-left button:hover{
+  border: 2px solid #C00000;
+  color: #C00000;
+  background-color: white;
+}
+.banner_row .banner-button-right button{
+padding: 15px 30px;
+background-color: #C00000;
+border: 2px solid #C00000;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+color: #FFFFFF;
+}
+.banner_row .banner-button-right button:hover{
+  background-color: white;
+  color: #C00000;
+  border: 2px solid #C00000;
+}
+.slider{
+width:80%;
+margin:auto;
+}
+
+.slider .large_image img{
+width:100%;
+margin:auto;
+padding-top: 8%;
+}
+.services_row {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+column-gap: 20px;
+}
+.services_container {
+  text-align: center;
+  padding: 12%;
+  margin-top: 11px;
+}
+.service_head{
+font-family: 'Poppins', sans-seri;
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 42px;
+color: #FFFFFF;
+}
+.service_des{
+font-family: 'Poppins', sans-seri;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #FFFFFF;
+}
+.about_row{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.about{
+width: 90%;
+margin: auto;
+padding-top: 7%
+}
+.about_row .about-col-6  img{
+  width: 100%;
+}
+.about-col-6{
+  width: 100%;
+}
+.about-right{
+  padding: 0px 30px;
+}
+.about .about-right h3{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 36px;
+color: #C00000;
+}
+.about .about-right h2{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 33px;
+line-height: 54px;
+color: #000000;
+}
+.about .about-right .p1{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.015em;
+color: #000000;
+}
+.about .about-right .p2{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.02em;
+
+color: #000000;
+}
+.about_row .about-buttons{
+display: flex;
+
+}
+.about_row .about-button-left{
+  margin-right: 15px;
+}
+.about_row .about-button-right{
+  margin-left: 15px;
+}
+.about_row .about-button-left button{
+  padding: 15px 30px;
+  border: 2px solid #C00000;
+  color: #000000;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+.about_row .about-button-left button:hover{
+  border: 2px solid #C00000;
+  color: #C00000;
+  background-color: white;
+}
+.about_row .about-button-right button{
+  padding: 15px 30px;
+  background-color: #C00000;
+  border: 2px solid #C00000;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+.about_row .about-button-right button:hover{
+  background-color: white;
+  color: #C00000;
+  border: 2px solid #C00000;
+}
+.nearby {
+  width: 90%;
+  margin: auto;
+  margin-top: 100px;
+}
+.nearby-row{
+display: grid;
+grid-template-columns: 0.75fr 1fr;
+column-gap: 15px;
+}
+.nearby-left .nearby-icon-box{
+  display: flex;
+  column-gap: 15px;
+
+}
+.nearby .nearby-left .nearby-icon-box h2{
+font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 42px;
+text-align: center;
+color: #FFFFFF;
+margin: 0;
+}
+.nearby-left .nearby-icon-box .nearby-heading {
+    background-color: #C00000;
+    border-radius: 10px;
+    padding: 4% ;
+}
+.nearby .nearby-left .nearby-icon-box p{
+font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #FFFFFF;
+margin: 0;
+}
+.nearby .nearby-left .nearby-nearby-icon-box h3{
+font-family: 'Poppins' , sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+text-align: center;
+color: #000000;
+}
+.nearby .nearby-left .nearby-icon-box .nearby-des{
+font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+text-align: center;
+color: #000000;
+align-items: center;
+display: flex;
+}
+.nearby-icon-box{
+margin-top:20px
+}
+.nearby .nearby-right img{
+  margin: 0;
+}
+.nearby .nearby-title{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 54px;
+color: #000000;
+text-align: center;
+margin-bottom: 60px;
+}
+.nearby-btn{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+text-align: center;
+color: #FFFFFF;
+padding: 15px 30px;
+background: #C00000;
+border: 2px solid #C00000;
+margin-top: 25px;
+}
+button.nearby-btn:hover{
+  border: 2px solid #C00000;
+  color: #C00000;
+  background: white;
+}
+.payment-plan{
+width:100%;
+background-color: #E8E8E8;
+padding: 60px 0px;
+margin-top: 85px;
+}
+.payment-plan h1{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+margin-bottom: 50px;
+color: #000000;
+text-align: center;
+}
+.payment-row{
+display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  column-gap: 20px;
+  text-align: center;
+	width: 80%;
+	margin: auto;
+}
+.payment-card{
+background-color: white;
+margin: 15px auto;
+width: 292px;
+height: 159px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.payment-plan .payment-card h2{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 42px;
+text-align: center;
+color: #C00000;
+}
+.payment-plan .payment-card p{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #000000;
+}
+.payment-plan button{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #FFFFFF;
+  padding: 15px 30px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  display: flex;
+  margin-top: 48px;
+  background: #C00000;
+  border: 2px solid #C00000;
+}
+.payment-plan button:hover{
+  color: #C00000;
+  background-color: white;
+  border: 2px solid #C00000;
+}
+.floor-plan{
+width: 80%;
+margin:auto;
+margin-top: 75px;
+margin-bottom: 75px;
+}
+.floor-count a {
+  text-decoration: none;
+}
+.tabcontent {
+display: none;
+}
+.tabcontent.active {
+display: block;
+}
+.floor-active{
+display: block;
+}
+.tab button.active {
+background-color: #C00000;
+}
+.tab button.active h1{
+  color: white;
+}
+.tab button.active p{
+  color: white;
+}
+.floor-plan .floor-heading h1{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+color: #000000;
+text-align: center;
+}
+.floor-count {
+  width: 100px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.floor-count-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.floor-plan .floor-count .floor-heading{
+padding: 15px 25px;
+}
+.tablinks{
+  padding: 15px 30px;
+  border: 2px solid transparent;
+}
+button.tablinks:hover{
+  color:#C00000;
+  border: 2px solid #C00000;
+}
+
+.floor-plan .floor-count h1{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 42px;
+color: #C6C6C6;
+margin: 0
+}
+.floor-plan .floor-count  p{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 21px;
+color: #C6C6C6;
+margin: 0
+}
+
+.floor-count button {
+  border: none;
+  cursor: pointer;
+  background: no-repeat;
+}
+.floor-row {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+}
+.floor-plan .floor-row h4{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+color: #000000;
+text-align:start;
+}
+.floor-plan .floor-row .floor-des{
+text-align:start;
+border-left: 3px solid red;
+    margin-top: 3%;
+}
+.floor-plan .floor-row .floor-des h3{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+color: #000000;
+margin: 8px;
+}
+.floor-plan .floor-row .floor-des p{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #000000;
+margin: 8px;
+}
+/* .floor-plan .floor-row .floor-buttons */
+.floor-plan .floor-buttons{
+  margin-left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  width: 50%;
+	margin-top: 50px;
+}
+.floor-buttons .floor-left{
+  margin-right: 15px;
+}
+.floor-buttons .floor-right{
+  margin-left: 15px;
+}
+.floor-plan .floor-row .floor-buttons  button {
+  padding: 15px 30px;
+  background-color: #C00000;
+  border: 2px solid #C00000;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+.floor-plan .floor-row .floor-buttons  button:hover{
+  background-color: white;
+  color: #C00000;
+  border: 2px solid #C00000;
+}
+.contact-us{
+width: 80%;
+margin: auto;
+margin-top: 100px;
+	margin-bottom: 100px;
+
+}
+.contact-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-left{
+  width: 60%;
+}  
+.contact-logo>img{
+  width: 50%;
+}
+.contact-us .contact-row .contact-left h1{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 54px;
+color: #C00000;
+}
+.contact-us .contact-row .contact-left h3{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 42px;
+color: #000000;
+}
+.contact-us .contact-row .contact-left p{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 27px;
+color: #000000;
+	width: 80%;
+}
+/* .contact-us .contact-row .contact-right .contact-buttons .contact-request-details button {
+padding: 12px 20px;
+background: #C00000;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 21px;
+color: #FFFFFF;
+border-color:transparent;
+
+} */
+.contact-us .contact-row .contact-right .contact-buttons .contact-button-row  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-button-row .contact-left{
+  width: 100%;
+  text-align: center;
+}
+.contact-button-row .contact-right{
+  width: 100%;
+  padding: 0px;
+  text-align: center;
+}
+.contact-us .contact-row .contact-right .contact-buttons .contact-button-row .contact-left button {
+padding: 16px 50px;
+background: #C00000;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 21px;
+color: #FFFFFF;
+border-color:transparent ;
+}
+.contact-us .contact-row .contact-right .contact-buttons .contact-button-row .contact-right button{
+padding: 16px 40px;
+background: #28A745;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 21px;
+color: #FFFFFF;
+border-color:transparent ;
+}
+.contact-us .contact-row .contact-right .contact-buttons .contact-button-row .contact-left img{
+
+margin: 0 11px -1px 0px;
+
+}
+.contact-us .contact-row .contact-right .contact-buttons .contact-button-row .contact-right img{
+
+margin: 0 11px -3px 0px;
+
+}
+.new-tst{
+  display: flex;
+  flex-direction: row;
+}
+.contact-us .contact-row .contact-right .contact-buttons p{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 15px;
+color: #7E7E7E;
+margin-top: 20px;
+}
+
+@media only screen and (max-width: 1025px) {
+.banner_row{
+  display: block;
+}
+	.banner_row .col-6>img{
+		width: 100%;
+	}
+section.banner img {
+  margin-top: 44px;
+}
+.about_row {
+  display: block;
+}
+.floor-plan .floor-row .floor-buttons button{
+padding: 12px 14px;
+}
+section.services {
+margin-top: 50px;
+}
+	.about-heading{
+		margin-top: 30px;
+	}
+	.floor-plan {
+    width: 95%;
+	margin: auto;
+}
+	.contact-row{
+		flex-direction: column;
+	}
+	.contact-left {
+    width: 90%;
+		margin: auto;
+}
+	.contact-right {
+    width: 90%;
+    margin: auto;
+}
+	.floor-row {
+    width: 100%;
+
+}
+.payment-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+}
+
+@media screen and (max-width: 601px) {
+	.grid-view.card-deck{
+		    padding-left: 0;
+    padding-right: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+	}
+  .banner_row h3{
+    line-height: 30px;
+    font-size: 24px;
+  }
+  .banner_row .banner-buttons{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-button-left{
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .banner-button-right{
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  .banner_row .col-6 img{
+    width: 100%;
+  }
+  section.slider-bt-dev {
+    display: none;
+}
+.about_row .about-col-6 img{
+  width: 100%;
+}
+.about-col-6.about-right {
+  margin-top: 30px;
+}
+.about .about-right h2{
+  line-height: 34px;
+  font-size: 28px;
+}
+.about_row .about-buttons{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about_row .about-button-left{
+  margin-right: 0px;
+  margin-bottom: 10px;
+}
+.about_row .about-button-right{
+  margin-left: 0px;
+  margin-top: 10px;
+}
+.services_row {
+    grid-template-columns: 1fr;
+}
+.nearby-row {
+  display: block;
+}
+.nearby-left {
+  width: 95%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.payment-plan h1{
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.payment-card{
+  margin: 10px auto;
+}
+
+.payment-plan {
+  height: auto;
+  padding-bottom: 8%;
+  margin-top: 35px;
+}
+.payment-row {
+  display: block;
+}
+.floor-row {
+display: block;
+}
+.floor-map {
+    padding-top: 7%;
+    position: inherit;
+    width: 100%;
+}
+.contact-row {
+display: block;
+}
+	.contact-us .contact-row .contact-left p{
+		width: 100%;
+	}
+	.btm-slid>img{
+		height: 100px !important;
+	}
+	.services{
+		margin-top: 50px !important;
+	}
+.contact-heading, .contact-des {
+
+text-align: center;
+}
+.contact-logo {
+
+text-align: center;
+}
+.contact-buttons {
+padding-top: 5%;
+}
+.contact-us .contact-row .contact-right .contact-buttons p {
+padding-top: 4%;
+}
+.floor-types {
+width: 95%;
+margin: auto;
+}
+.main-flx{
+  padding-left: 0px;
+}
+.floor-plan{
+  width: 90%;
+}
+.floor-row{
+  width: 100%;
+}
+.floor-types .my-pp-flx{
+  flex-direction: column;
+}
+.floor-types .floor-map img{
+  width: 100%;
+}
+.floor-plan .floor-buttons {
+  width: 90%;
+  margin: auto;
+  flex-direction: column;
+  margin-top: 25px;
+  justify-content: center;
+}
+.floor-buttons .floor-left {
+  margin-right: 0px;
+  margin-bottom: 10px;
+}
+	.new-tst{
+		flex-direction: column;
+	}
+.floor-buttons .floor-right {
+  margin-left: 0px;
+  margin-top: 10px;
+}
+.contact-left {
+  width: 95%;
+  margin: auto;
+}
+.contact-right {
+  width: 96%;
+  margin: auto;
+}
+.contact-us .contact-row .contact-right .contact-buttons .contact-button-row {
+  flex-direction: column;
+}
+.contact-left {
+  margin-bottom: 10px;
+}
+.contact-button-row .contact-right{
+  text-align: center;
+    margin-top: 10px;
+}
+}
+
+/* slider css */
+/* body {
+  background-color: rgb(225, 185, 185);
+} */
+
+.js .slider-single > div:nth-child(1n + 2) {
+  display: none;
+}
+
+.js .slider-single.slick-initialized > div:nth-child(1n + 2) {
+  display: block;
+}
+/* .slider-bt-dev-nw .web-pic>img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+} */
+.upr-slid>img{
+	height: 100% !important;
+	width: 100%;
+  object-fit: cover;
+}
+.btm-slid>img{
+	height: auto;
+    object-fit: contain;
+    max-height: 200px;
+}
+.custom-slide {
+  padding: 15px 5px 0 5px;
+
+  height: 200px;
+  object-fit: cover;
+  box-shadow: 5px 5px 5px #dedede76;
+}
+
+.slider-single h3 {
+  line-height: 10rem;
+}
+
+.slider-nav .slick-slide {
+  margin: 20px 5px;
+}
+
+.slider-nav .slick-slide {
+  margin: 20px 5px;
+}
